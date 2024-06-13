@@ -1,9 +1,5 @@
 # Define variables
-variable "resource_group_name" {
-  type        = string
-  description = "The name of the resource group to create."
-  default     = "example-rg"
-}
+
 
 variable "location" {
   type        = string
@@ -11,11 +7,6 @@ variable "location" {
   default     = "eastus"
 }
 
-variable "storage_account_name" {
-  type        = string
-  description = "The name of the storage account to create."
-  default     = "examplestorageaccount"
-}
 
 variable "account_tier" {
   type        = string
@@ -27,4 +18,27 @@ variable "account_replication_type" {
   type        = string
   description = "The replication type of the storage account. For example, 'LRS'."
   default     = "LRS"
+}
+
+variable "rg_prefix" {
+  type        = string
+  default     = "rg"
+}
+
+variable "org_name" {
+  type        = string
+  default     = "ts"
+}
+
+variable "proj_name" {
+  type        = string
+  default     = "EITS"
+}
+variable "proj_number" {
+  type        = string
+  default     = "09"
+}
+variable "st_prefix" {
+  type        = string
+  default     = "st"
 }
