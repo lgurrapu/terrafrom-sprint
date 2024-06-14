@@ -16,3 +16,10 @@ resource "azurerm_storage_account" "main" {
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
 }
+# Create azurerm_servicebus_name account
+/* resource "azurerm_servicebus_account" "main" {
+  name                     = local.sb_name
+  location                 = var.location
+  resource_group_name      = azurerm_resource_group.main.name
+  sku                       = "Standard"
+} */

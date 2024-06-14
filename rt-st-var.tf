@@ -36,11 +36,15 @@ variable "proj_name" {
 }
 variable "proj_number" {
   type        = string
-  default     = "69"
+  default     = "79"
 }
 variable "st_prefix" {
   type        = string
   default     = "st"
 }
 
+variable "sb_prefix" {
+  type        = string
+  default     = "sb"
+}
 #$(var.org_name)_$(var.rg_prefix)_$(var.proj_name)_$(var.proj_number)
